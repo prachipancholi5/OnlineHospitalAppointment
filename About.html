@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>About Us Page</h1>
+  <p>This website is about online appointment System.</p>
+  <p>You can use this site for booking appointment very easily and fast.So,that the patient doesn't have to wait for too long in hospital and get the best possible way to treat themselves at earliest. </p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://www.kindpng.com/picc/m/78-786555_woman-doctor-icon-png-clipart-png-download-female.png" alt="Vishwa" style="width:100%">
+      <div class="container">
+        <h2>Vishwa Thakkar</h2>
+        <p class="title">EN.NO.:180020107077</p>
+        <p>This site is for online hospital appointment.</p>
+        <p>Email id:180020107077ait@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://www.kindpng.com/picc/m/78-786555_woman-doctor-icon-png-clipart-png-download-female.png" alt="Harvi" style="width:100%">
+      <div class="container">
+        <h2>Harvi Maradiya</h2>
+        <p class="title">EN.NO.:180020107025</p>
+        <p>This site is for online hospital appointment.</p>
+        <p>Email id:180020107025ait@gmail.com<</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://www.kindpng.com/picc/m/78-786555_woman-doctor-icon-png-clipart-png-download-female.png" alt="Prachi" style="width:100%">
+      <div class="container">
+        <h2>Prachi Pancholi</h2>
+        <p class="title">EN.NO:180020107032</p>
+        <p>This site is for online hospital appointment.</p>
+        <p>Email id:180020107032ait@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://www.kindpng.com/picc/m/78-786555_woman-doctor-icon-png-clipart-png-download-female.png" alt="Malvi" style="width:100%">
+      <div class="container">
+        <h2>Malvi Shah</h2>
+        <p class="title">EN.NO.:180020107065</p>
+        <p>This site is for online hospital appointment.</p>
+        <p>Email id:180020107065ait@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="https://www.kindpng.com/picc/m/78-786555_woman-doctor-icon-png-clipart-png-download-female.png" alt="Priti" style="width:100%">
+      <div class="container">
+        <h2>Priti Vadhiya</h2>
+        <p class="title">EN.NO.:180020107081</p>
+        <p>This site is for online hospital appointment.</p>
+        <p>Email id:180020107081ait@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
