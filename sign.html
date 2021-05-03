@@ -1,0 +1,75 @@
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> SIGN-IN DETAILS </title>
+<script>
+ function checkPassword(form) {
+                password1 = form.password1.value;
+                password2 = form.password2.value;
+				if (password1 == '')
+                    alert ("Please enter Password");
+				else if (password2 == '')
+                    alert ("Please enter confirm password");
+                else if (password1 != password2) {
+                    alert ("\nPassword did not match: Please try again...")
+                    return false;
+                }
+</script>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+button {   
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: lightblue;  
+    }   
+</style>   
+</head>    
+<body>    
+    <center> <h1> Sign-in  </h1> </center>   
+    <form>
+	<div class="container"><label>Patient name : </label> <input name="username" required="" type="text" placeholder="Enter name" />
+<div class="container"><label>Mail Id : </label> <input name="mail id" type="text" placeholder="Enter mail id" />
+<label>Gender : </label> <input name="gender" type="radio" value="Male" />Male<input name="gender" type="radio" value="Female" />Female<input name="gender" type="radio" value="Other" />Other<br />
+<label>Age : </label> <input name="number" required="" type="number" placeholder="Enter age" />
+<label>DOB : </label> <input name="date" required="" type="date" placeholder="Enter date" /></div>
+<div class="container"><label>Mobile No. : </label> <input name="details" required="" type="numeric" placeholder="Enter contact no." />
+<div class="container"><label>Password : </label> <input name="password1" type="password" placeholder="Enter Password(at least 4 digits)" />
+<div class="container"><label>Confirm Password : </label> <input name="password2" type="password" placeholder="Confirm Password" />
+ <button type="submit">Sign-in</button>
+  <button type="reset">Reset</button>
+  <button type="button" class="cancelbtn"> Cancel</button>      
+        </div>   
+    </form>     
+</body>     
+</html>
