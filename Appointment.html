@@ -1,0 +1,95 @@
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> APPOINTMENT DETAILS </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: pink;  
+}  
+button {   
+       background-color: #4CAF50;   
+       width: 100%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;   
+         }   
+ form {   
+        border: 3px solid #f1f1f1;   
+    }   
+ input[type=text], input[type=password] {   
+        width: 100%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: lightblue;  
+    }   
+</style>   
+</head>    
+<body>    
+    <center> <h1> Appointment Form </h1> </center>   
+    <form>  
+<div class="container"><label>Patient name : </label> <input name="username" required="" type="text" placeholder="Enter name" />
+<div class="container"><label>Mail Id : </label> <input name="mail id" type="text" placeholder="Enter mail id" />
+<label>Gender : </label> <input name="gender" type="radio" value="Male" />Male<input name="gender" type="radio" value="Female" />Female<input name="gender" type="radio" value="Other" />Other<br />
+<label>Age : </label> <input name="number" required="" type="number" placeholder="Enter age" />
+<label>DOB : </label> <input name="date" required="" type="date" placeholder="Enter date" /></div>
+<div class="container"><label>Mobile No. : </label> <input name="details" required="" type="numeric" placeholder="Enter contact no." />
+<div class="container"><label>Enter your reason for appointment: </label> <input name="reason" required="" type="text" placeholder="Enter the disease" />
+<label>Required specialist : </label><select>
+<option value="choose one">Choose one</option>
+<option value="choose one">Physiotherapist</option> 
+<option value="choose one">Surgeon</option>
+<option value="choose one">Neurologist</option>
+<option value="choose one">Ayurvedic doc.</option>
+<option value="choose one">Homeopathic doc.</option>
+<option value="choose one">Cardiologist</option>
+<option value="choose one">Dentist</option>
+<option value="choose one">Audiologist</option>
+<option value="choose one">Psychiatrists</option>
+<option value="choose one">Paediatrician</option>
+<option value="choose one">Veterinarian</option>
+<option value="choose one">Gynaecologist</option>
+<option value="choose one">ENT specialist</option></select><label>Choose your hospital : </label><select>
+<option value="choose one">Choose one</option>
+<option value="Civil Hospital">Civil</option>
+<option value="Zydus">Zydus</option>
+<option value="Bodyline">Bodyline</option>
+<option value="Lifecare">Lifecare</option>
+<option value="Kaizen">Kaizen</option>
+<option value="KD">KD</option>
+<option value="Shalby">Shalby</option>
+<option value="Sanjivani">Sanjivani</option>
+<option value="Shrey">Shrey</option>
+<option value="Apollo">Apollo</option>
+<option value="HCG">HCG</option>
+</select>
+<br>
+            <label> Taking Any Medications,Currently? </label>
+            <input name="Taking Any Medications,Currently?" type="radio" value="Yes"/>Yes<input name="Taking Any Medications,Currently?" type="radio"                    value=No"/>No <br>
+            <label>Additional Note:</label>
+            <input type="mail to" placeholder="Enter Additional Note" name="Additional Note" required> <br> 
+            <button type="submit">Book My Appointment</button>   
+            <input type="checkbox" checked="checked"> Remember me   
+            <button type="button" class="cancelbtn"> Cancel</button>      
+        </div>   
+    </form>     
+</body>     
+</html>
